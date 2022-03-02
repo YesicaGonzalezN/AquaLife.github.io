@@ -12,7 +12,23 @@ function calcularAgua() {
     }
 }
 
-
 calcularAgua()
 
 
+class Usuario {
+    constructor(name,informacion) {
+       this.name = name
+       this.informacion = informacion
+    } 
+}
+
+
+let datos = ['Nombre', 'Apellido', 'Edad', 'Genero']
+let usuarios = []
+
+for (const dato of datos) {
+    let informacion= prompt(`¿Cual es tu ${dato}?`)
+    usuarios.push(new Usuario(dato, informacion))
+}
+
+console.log(usuarios);
