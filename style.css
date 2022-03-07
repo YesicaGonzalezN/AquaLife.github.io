@@ -74,6 +74,10 @@ body {
     opacity: 0.8;
 }
 
+.container-all {
+    margin-left: 100px;
+}
+
 .banner {
     display: flex;
     justify-content: space-between;
