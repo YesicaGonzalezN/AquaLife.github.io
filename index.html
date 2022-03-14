@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
-    <script src="https://kit.fontawesome.com/e5e5058fb4.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e5e5058fb4.js" crossorigin="anonymous"></script>
   <title>AquaLife - Drink Water Reminder</title>
   <meta name="author" content="Yesica Gonzalez">
   <meta name="description"
@@ -26,7 +26,7 @@
         <img src="/assets/images/logo.png" alt="AquaLife">
         <nav>
           <a href="#"> <i class="fa-solid fa-house"></i>Home</a>
-          <a href="#"> <i class="fa-solid fa-utensils"></i>Recipe</a>
+          <a href="recipe.html"> <i class="fa-solid fa-utensils"></i>Recipe</a>
           <a href="#"> <i class="fa-solid fa-computer-mouse"></i>Sign Up</a>
           <a href="#"> <i class="fa-solid fa-address-card"></i>Register</a>
         </nav>
@@ -36,38 +36,96 @@
       <i class="fa-solid fa-bars"></i>
     </div>
   </header>
-<div class="container-all" id="move-content">
-  <section class="banner">
-    <section class="banner_title">
-      <h1>AquaLife</h1>
-      <p class="text">El agua es fundamental para el correcto <br>
-        funcionamiento de nuestro organismo. Esto, porque<br>
-        cada célula de nuestro cuerpo necesita<br>
-        del agua para funcionar de forma adecuada.<br>
-        De ahí la importancia de mantenerlo bien hidratado,<br>
-        sobre todo en épocas de calor.<br>
-      </p>
-      <p class="question">¿Quieres calcular la cantidad de agua que debes tomar?</p>
-      <a href="#" class="calcula">Calcula aquí</a>
-    </section>
-    <div class="banner_img">
-      <img src="/assets/images/vaso-img.png" alt="Vaso sonriente">
-    </div>
-  </section>
+  <div class="container-all" id="move-content">
+    <section class="banner">
+      <section class="banner_title">
+        <h1>AquaLife</h1>
+        <p class="text">El agua es fundamental para el correcto <br>
+          funcionamiento de nuestro organismo. Esto, porque<br>
+          cada célula de nuestro cuerpo necesita<br>
+          del agua para funcionar de forma adecuada.<br>
+          De ahí la importancia de mantenerlo bien hidratado,<br>
+          sobre todo en épocas de calor.<br>
+        </p>
+        <p class="question">¿Quieres calcular la cantidad de agua que debes tomar?</p>
+        <div class="center">
+          <button id="show-calcula" class="calcula">Calcula aquí</button>
+        </div>
 
-  <div class="burbujas">
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
+        <form action="">
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <div class="form">
+
+            <h2>Calculador de agua</h2>
+
+            <div class="form-element">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-element">
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" name="apellido" required>
+            </div>
+
+            <div class="form-element">
+              <label for="edad">Edad:</label>
+              <input type="number" id="edad" name="edad" required>
+            </div>
+
+            <div class="form-element">
+              <label for="genero">Género:</label><br>
+
+              <input type="radio" id="femenino" name="genero" value="femenino" required>
+              <label for="femenino">Femenino</label><br>
+
+              <input type="radio" id="masculino" name="genero" value="masculino" required>
+              <label for="masculino">Masculino</label>
+            </div>
+
+            <div class="form-element">
+              <label for="peso">Indica tu peso: (expresado en kg)</label>
+              <input type="number" id="peso" name="peso" required>
+            </div>
+
+            <div class="form-element">
+              <label for="altura">Indica tu altura: (expresada en cm)</label>
+              <input type="number" id="altura" name="altura" required>
+            </div>
+            
+            <div class="form-element">
+              <button>Calcular</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      </section>
+
+      <div class="banner_img">
+        <img src="/assets/images/vaso-img.png" alt="Vaso sonriente">
+      </div>
+    </section>
+
+    <div id="footer">
+      <ul>
+        <li>Copiright - Todos los derechos reservados. AquaLife</li>
+      </ul>
+    </div>
+
+    <div class="burbujas">
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+    </div>
   </div>
-</div>
   <script src="archivo.js"></script>
 </body>
 
