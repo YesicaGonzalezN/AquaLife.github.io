@@ -127,7 +127,7 @@ header {
 
 .banner_img {
     animation: movimiento 2.5s linear infinite;
-    margin-left: 30%;
+    margin-left: 40%;
 }
 
 .banner_img img {  
@@ -145,13 +145,14 @@ header {
     background: rgb(102, 211, 245);
     box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
     border-radius: 10px;
+    z-index: 2;
     transition: top 0ms ease-in-out 200ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 20ms ease-in-out 0ms;
 }
 
 .popup.active {
-    top: 50%;
+    top: 60%;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: top 0ms ease-in-out 0ms,
