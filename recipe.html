@@ -7,73 +7,72 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
     <script src="https://kit.fontawesome.com/e5e5058fb4.js" crossorigin="anonymous"></script>
-    <title>AquaLife - Drink Water Reminder</title>
+    <title>AquaLife - Recetas</title>
     <meta name="author" content="Yesica Gonzalez">
     <meta name="description"
         content="The purpose of this application is to remind people to consume the amount of water necessary to feel hydrated and obtain a healthier life.">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/html" href="style-css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_recipe.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="bubble-animate">
-        <div class="header-nav">
-            <div class="container">
-                <img src="/assets/images/logo.png" alt="AquaLife">
-                <nav>
-                    <a href="index.html"> <i class="fa-solid fa-house"></i>Home</a>
-                    <a href="#"> <i class="fa-solid fa-utensils"></i>Recipe</a>
-                    <a href="#"> <i class="fa-solid fa-computer-mouse"></i>Sign Up</a>
-                    <a href="#"> <i class="fa-solid fa-address-card"></i>Register</a>
-                </nav>
+    <div id="main-container">
+        <div id="recetas-section" class="bg-recetas">
+            <div id="logo">
+                <a href="index.html">AquaLife</a>
+            </div>
+            <div class="recetas-titulo">
+                <h1>LAS MEJORES</h1>
+                <h3>recetas</h3>
             </div>
         </div>
-        <div id="icon-menu">
-            <i class="fa-solid fa-bars"></i>
+
+        <div id="recetas-content">
+            <section>
+                <h2>Recetas mejor guardadas</h2>
+
+                <div class="thumbnail">
+                    <div class="image">
+                        <a href="hummus.html"><img src="/assets/images/recipes/hummus.jpg" alt=""></a>
+                    </div>
+
+                    <div class="info">
+                        <div class="title">Hummus de Garbanzos</div>
+                        <div class="type">Snack</div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <div class="image">
+                        <a href="risotto.html"><img src="/assets/images/recipes/risotto.jpg" alt=""></a>
+                    </div>
+
+                    <div class="info">
+                        <div class="title">Risotto de hongos</div>
+                        <div class="type">Cena</div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <div class="image">
+                        <a href="pollo-al-curry.html"><img src="/assets/images/recipes/pollo-al-curry.jpg" alt=""></a>
+                    </div>
+
+                    <div class="info">
+                        <div class="title">Pollo al Curry</div>
+                        <div class="type">Almuerzo</div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </header>
-
-    <div class="recetas-titulo">
-        <h1>LAS MEJORES</h1>
-        <h3>recetas</h3>
-    </div>
-
-    <div id="recetas-content">
-        <section>
-            <h2>Recetas mejor guardadas</h2>
-
-            <div class="thumbnall">
-                <div class="image">
-                    <a href="hummus.html"><img src="/assets/images/recipes/hummus.png" alt=""></a>
-                </div>
-                <div class="info">
-                    <div class="title">Hummus de Garbanzos</div>
-                    <div class="type">Snack</div>
-                </div>
-            </div>
-            <div class="thumbnall">
-                <div class="image">
-                    <a href="risotto.html"><img src="/assets/images/recipes/risotto.png" alt=""></a>
-                </div>
-                <div class="info">
-                    <div class="title">Risotto de hongos</div>
-                    <div class="type">Cena</div>
-                </div>
-            </div>
-            <div class="thumbnall">
-                <div class="image">
-                    <a href="pollo-al-curry.html"><img src="/assets/images/recipes/polloalcurry.png" alt=""></a>
-                </div>
-                <div class="info">
-                    <div class="title">Pollo al Curry</div>
-                    <div class="type">Almuerzo</div>
-                </div>
-            </div>
-        </section>
     </div>
 
     <div id="footer">
@@ -81,22 +80,6 @@
             <li>Copiright - Todos los derechos reservados. AquaLife</li>
         </ul>
     </div>
-
-
-    <div class="burbujas">
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-    </div>
-    </div>
-    <script src="archivo.js"></script>
 </body>
 
 </html>

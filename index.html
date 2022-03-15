@@ -14,34 +14,43 @@
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/html" href="style-css/normalize.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/html" href="style-css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="style_recipe.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="bubble-animate">
-    <div class="header-nav">
-      <div class="container">
-        <img src="/assets/images/logo.png" alt="AquaLife">
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">AquaLife</a>
+      </div>
+
+      <div class="menu">
         <nav>
-          <a href="#"> <i class="fa-solid fa-house"></i>Home</a>
-          <a href="recipe.html"> <i class="fa-solid fa-utensils"></i>Recipe</a>
-          <a href="#"> <i class="fa-solid fa-computer-mouse"></i>Sign Up</a>
-          <a href="#"> <i class="fa-solid fa-address-card"></i>Register</a>
+          <ul>
+            <li class="menu-selected"><a href="index.html" class="text-menu-selected">Inicio</a></li>
+            <li class="menu-selected"><a href="recipe.html" class="text-menu-selected">Recetas</a></li>
+          </ul>
         </nav>
       </div>
     </div>
-    <div id="icon-menu">
-      <i class="fa-solid fa-bars"></i>
-    </div>
   </header>
-  <div class="container-all" id="move-content">
+
+  <div class="container-all">
     <section class="banner">
       <section class="banner_title">
         <h1>AquaLife</h1>
-        <p class="text">El agua es fundamental para el correcto <br>
-          funcionamiento de nuestro organismo. Esto, porque<br>
+        <p class="text">El agua es fundamental para el correcto
+          funcionamiento de nuestro<br> organismo. Esto, porque
           cada célula de nuestro cuerpo necesita<br>
           del agua para funcionar de forma adecuada.<br>
           De ahí la importancia de mantenerlo bien hidratado,<br>
@@ -53,66 +62,64 @@
         </div>
 
         <form action="">
-        <div class="popup">
-          <div class="close-btn">&times;</div>
-          <div class="form">
+          <div class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="form">
 
-            <h2>Calculador de agua</h2>
+              <h2>Calculador de agua</h2>
 
-            <div class="form-element">
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" required>
-            </div>
+              <div class="form-element">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
 
-            <div class="form-element">
-              <label for="apellido">Apellido:</label>
-              <input type="text" id="apellido" name="apellido" required>
-            </div>
+              <div class="form-element">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+              </div>
 
-            <div class="form-element">
-              <label for="edad">Edad:</label>
-              <input type="number" id="edad" name="edad" required>
-            </div>
+              <div class="form-element">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+              </div>
 
-            <div class="form-element">
-              <label for="genero">Género:</label><br>
+              <div class="form-element">
+                <label for="genero">Género:</label><br>
 
-              <input type="radio" id="femenino" name="genero" value="femenino" required>
-              <label for="femenino">Femenino</label><br>
+                <input type="radio" id="femenino" name="genero" value="femenino" required>
+                <label for="femenino">Femenino</label><br>
 
-              <input type="radio" id="masculino" name="genero" value="masculino" required>
-              <label for="masculino">Masculino</label>
-            </div>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+              </div>
 
-            <div class="form-element">
-              <label for="peso">Indica tu peso: (expresado en kg)</label>
-              <input type="number" id="peso" name="peso" required>
-            </div>
+              <div class="form-element">
+                <label for="peso">Indica tu peso: (expresado en kg)</label>
+                <input type="number" id="peso" name="peso" required>
+              </div>
 
-            <div class="form-element">
-              <label for="altura">Indica tu altura: (expresada en cm)</label>
-              <input type="number" id="altura" name="altura" required>
-            </div>
-            
-            <div class="form-element">
-              <button>Calcular</button>
+              <div class="form-element">
+                <label for="altura">Indica tu altura: (expresada en cm)</label>
+                <input type="number" id="altura" name="altura" required>
+              </div>
+
+              <div class="form-element">
+                <button>Calcular</button>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
+        </form>
       </section>
 
       <div class="banner_img">
         <img src="/assets/images/vaso-img.png" alt="Vaso sonriente">
       </div>
     </section>
-
-    <div id="footer">
-      <ul>
-        <li>Copiright - Todos los derechos reservados. AquaLife</li>
-      </ul>
+  </div>
+    <div class="footer">
+      <p>Copiright - Todos los derechos reservados. AquaLife</p>
     </div>
-
+  
     <div class="burbujas">
       <div class="burbuja"></div>
       <div class="burbuja"></div>
@@ -125,7 +132,7 @@
       <div class="burbuja"></div>
       <div class="burbuja"></div>
     </div>
-  </div>
+  
   <script src="archivo.js"></script>
 </body>
 

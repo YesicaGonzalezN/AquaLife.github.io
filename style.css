@@ -2,94 +2,102 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 
 body {
     background-image: linear-gradient(350deg, #befffb 0, #9bf1eb 25%, #6cd8d8 50%, #2abfc6 75%, #00acbb 100%);
     font-family: 'Montserrat', sans-serif;
-
 }
 
-.container {
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.bubble-animate {
-    width: 100%;
-    height: 10vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.header-nav {
-    width: 100%;
-    position: absolute;
+header {
+    position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    background-color: #2abfc6;
+    box-shadow: 0 4px 25px -22px #000;
+    z-index: 2;
 }
 
-.header-nav .container {
+.header-container {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    align-self: center;
-    padding: 15px 0;
 }
 
-.header-nav img {
-    height: 50px;
-    width: 50px;
-}
-
-.header-nav nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.header-nav nav a i {
-    width: 20px;
-}
-
-#icon-menu {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 20px;
-    top: 16px;
-    padding: 20px;
-    font-size: 20px;
-    background: #09dce4;
-    border-radius: 100%;
-    color: #fff;
-    display: none;
+.logo {
+    height: 55px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
-#icon-menu:hover {
-    opacity: 0.8;
+.logo a {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.menu {
+    height: 60px;
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul {
+    height: 100%;
+    display: flex;
+}
+
+.menu nav ul li {
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu nav ul li a {
+    color: #fff;
+    transition: color 300ms;
+}
+
+.menu nav ul li a:hover {
+    color: rgb(145, 224, 255)
+}
+
+.menu .text-menu-selected {
+    color:hsl(0, 0%, 100%);
 }
 
 .container-all {
-    margin-left: 100px;
+    width: 90%;
+    max-width: 1200px;
+    padding: 100px;
+    align-items: center;
 }
 
 .banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 100%;
 }
 
 .banner_title h1 {
+    font-family: 'Montserrat', sans-serif;;
     color: #fff;
     font-size: 70px;
     font-weight: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .banner_title .text {
@@ -101,8 +109,8 @@ body {
 .banner_title .question {
     color: #fff;
     font-size: 22px;
-    margin-bottom: 30px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .banner_title .calcula {
@@ -115,6 +123,15 @@ body {
     border: none;
     border-radius: 10%;
     cursor: pointer;
+}
+
+.banner_img {
+    animation: movimiento 2.5s linear infinite;
+    margin-left: 30%;
+}
+
+.banner_img img {  
+    display: block;
 }
 
 .popup {
@@ -200,18 +217,13 @@ body {
     cursor: pointer;
 }
 
-.banner_img {
-    animation: movimiento 2.5s linear infinite;
-}
 
-.banner_img img {
-    width: 600px;
-    display: block;
-
-}
-
-h1, h2, h3 {
-    color:#fff;
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(6, 152, 250);
+    text-align: center;
+    width: 100%;
+    height: 50px;
 }
 
 .burbuja {
@@ -220,7 +232,7 @@ h1, h2, h3 {
     opacity: .3;
 
     position: absolute;
-    bottom: -150;
+    bottom: 0;
 
     animation: burbujas 3s linear infinite;
 }
@@ -341,15 +353,23 @@ h1, h2, h3 {
 
 }
 
-@media screen and (max-width: 1220px) {
-    .bubble-animate,
-    .banner {
+@media screen and (max-width: 1200px) {
+   .banner,
+   .banner_img {
         max-width: 1000px;
         padding: 0 20px;
     }
 }
 
 @media screen and (max-width: 1020px) {
+    .banner
+     {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
     .banner {
         width: 100%;
         flex-direction: column;
