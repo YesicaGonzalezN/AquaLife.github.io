@@ -52,3 +52,35 @@ document.querySelector(".popup .close-btn").addEventListener("click",function(){
     document.querySelector(".popup").classList.remove("active");
 });
 // cerrar popup
+
+
+let send = document.getElementById("send");
+let form = document.getElementById("formpopup");
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+});
+
+send.addEventListener("click", (event) => {
+    let nombre = document.getElementById("nombre");
+    let apellido = document.getElementById("apellido");
+    let edad = document.getElementById("edad");
+    let genero = document.getElementById("genero");
+    let peso = document.getElementById("peso");
+    let altura = document.getElementById("altura");
+
+    nombre = nombre.value;
+    localStorage.setItem("nombre", nombre);
+
+    apellido = apellido.value;
+    localStorage.setItem("apellido", apellido);
+
+    edad = edad.value;
+    localStorage.setItem("edad", edad);
+
+    peso = peso.value;
+    localStorage.setItem("peso", peso);
+
+    altura = altura.value;
+    localStorage.setItem("altura", altura);
+});

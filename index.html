@@ -61,13 +61,15 @@
           <button id="show-calcula" class="calcula">Calcula aquí</button>
         </div>
 
-        <form action="">
-          <div class="popup">
-            <div class="close-btn">&times;</div>
-            <div class="form">
 
-              <h2>Calculador de agua</h2>
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <div class="form">
 
+            <h2>Calculador de agua</h2>
+
+
+            <form id="formpopup">
               <div class="form-element">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -84,16 +86,6 @@
               </div>
 
               <div class="form-element">
-                <label for="genero">Género:</label><br>
-
-                <input type="radio" id="femenino" name="genero" value="femenino" required>
-                <label for="femenino">Femenino</label><br>
-
-                <input type="radio" id="masculino" name="genero" value="masculino" required>
-                <label for="masculino">Masculino</label>
-              </div>
-
-              <div class="form-element">
                 <label for="peso">Indica tu peso: (expresado en kg)</label>
                 <input type="number" id="peso" name="peso" required>
               </div>
@@ -103,12 +95,15 @@
                 <input type="number" id="altura" name="altura" required>
               </div>
 
-              <div class="form-element">
-                <button>Calcular</button>
+              <div class="button-row">
+                <div class="button">
+                  <button type="submit" id="send">Calcular</button>
+                </div>
               </div>
-            </div>
+            </form>
+
           </div>
-        </form>
+        </div>
       </section>
 
       <div class="banner_img">
@@ -116,23 +111,23 @@
       </div>
     </section>
   </div>
-    <div class="footer">
-      <p>Copiright - Todos los derechos reservados. AquaLife</p>
-    </div>
-  
-    <div class="burbujas">
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-    </div>
-  
+  <div class="footer">
+    <p>Copyright - Todos los derechos reservados. AquaLife</p>
+  </div>
+
+  <div class="burbujas">
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+  </div>
+
   <script src="archivo.js"></script>
 </body>
 
