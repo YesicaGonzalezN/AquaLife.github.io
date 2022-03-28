@@ -145,7 +145,7 @@ header {
     background: rgb(102, 211, 245);
     box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
     border-radius: 10px;
-    z-index: 2;
+    z-index: 1;
     transition: top 0ms ease-in-out 200ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 20ms ease-in-out 0ms;
@@ -576,16 +576,16 @@ header {
     color: #fff;
 }
 
-.card .content-recipe button {
+.card .content-recipe a {
+    position: relative;
     font-weight: 600;
     color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
-    border: none;
     background: #fff;
     color: rgb(2, 180, 180);
     margin-top: 10px;
-    cursor: pointer;
+    display: inline-block;
 }
 
 .card .content-image1 img {
@@ -673,7 +673,7 @@ header {
     height: 400px;
 }
 
-.recetas-modal {
+.recetas-modal, .recetas-modal1, .recetas-modal2 {
     position: fixed;
     top: 0;
     left: 0;
@@ -683,17 +683,37 @@ header {
     display: flex;
     opacity: 0;
     pointer-events: none;
+    z-index:2;
+    transition: opacity .6s;
+    --transform: translateY(-100vw);
+    --transition: transform .8s;
 }
 
-.modal--show {
+.modalhummus--show {
     opacity: 1;
     pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+}
+
+.modalrisotto--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+}
+
+.modalpollo--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
 }
 
 .container-modal {
     margin: auto;
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 800px;
     max-height: 90%;
     background-color: #2abfc6;
     border-radius: 6px;
@@ -703,6 +723,8 @@ header {
     place-items: center;
     grid-auto-columns: 100%;
     overflow:auto;
+    transform: var(--transform);
+    transition: var(--transition);
 }
 
 .title-modal {
@@ -719,7 +741,7 @@ ul li span {
     text-align: center;
 }
 
-.close-modal {
+.close-modal, .close-modal1, .close-modal2 {
     text-decoration: none;
     color: #fff;
     background-color: #0e8f9b;
