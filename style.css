@@ -16,7 +16,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #2abfc6;
     box-shadow: 0 4px 25px -22px #000;
     z-index: 2;
@@ -212,12 +212,114 @@ header {
     border: none;
     outline: none;
     font-size: 15px;
-    background: rgb(82, 191, 241);
+    background-color: rgb(82, 191, 241);
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
 }
 
+.modal__calcula {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: #111111bd;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s;
+    --transform: translateY(-100vw);
+    --transition: transform .8s;
+}
+
+.modal__calcula1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: #111111bd;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s;
+    --transform: translateY(-100vw);
+    --transition: transform .8s;
+}
+
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+    z-index: 3;
+    --transform: translateY(0);
+    --transition: transform .8s .2s;
+}
+
+.modal--show1 {
+    opacity: 1;
+    pointer-events: unset;
+    z-index: 3;
+    --transform: translateY(0);
+    --transition: transform .8s .2s;
+}
+
+.modal__container {
+    margin: auto;
+    width: 90%;
+    max-width: 700px;
+    max-height: 100%;
+    background-color:#6cd8d8;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    text-align: center;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.modal__title {
+    font-size: 2.5rem;
+}
+
+.modal__paragraph {
+    margin-bottom: 10px;
+}
+
+.modal__vinculo {
+    color:#fff;
+    font-weight: 600;
+}
+
+.modal__container img {
+    width: 20%;
+    max-width: 300px;
+}
+
+.modal__close, .modal__close1{
+    text-decoration: none;
+    color: #fff;
+    background-color: #08beb2;
+    padding: 1em 3em;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 600;
+    transition: background-color .3s;
+}
+
+.modal__close:hover {
+    color: #08beb2;
+    background-color: #fff;
+}
+
+.modal__close1:hover {
+    color: #08beb2;
+    background-color: #fff;
+}
 
 .footer {
     font-family: 'Montserrat', sans-serif;
@@ -244,6 +346,7 @@ header {
     left: 5%;
     animation-duration: 3s;
     animation-delay: 3s;
+    z-index:0;
 }
 
 .burbuja:nth-child(2) {
@@ -377,5 +480,296 @@ header {
     }
 }
 
+/* estilo de recipe.html */
 
+.titulo-recipe h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 3em;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
 
+.container-recipe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#0dd1d8;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle:before {
+    background: #0cbfc5;
+    clip-path: circle(400px at center);
+}
+
+.card .content-image img {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card .content-recipe,
+.content-recipe1,
+.content-recipe2 {
+    position: relative;
+    left: 20%;
+    width: 50%;
+    padding: 20px 60px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .content-recipe {
+    left:0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .content-recipe h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+.card .content-recipe p {
+    color: #fff;
+}
+
+.card .content-recipe button {
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+    color: rgb(2, 180, 180);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.card .content-image1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 250px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card .content-recipe1 h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+.card .content-recipe1 p {
+    color: #fff;
+}
+
+.card .content-recipe1 a {
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: rgb(2, 180, 180);
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card:hover .content-recipe1 {
+    left:0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .content-image2 img {
+    position: absolute;
+    top: 48%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    height: 270px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card .content-recipe2 h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+.card .content-recipe2 p {
+    color: #fff;
+}
+
+.card .content-recipe2 a {
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: rgb(2, 180, 180);
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card:hover .content-recipe2 {
+    left:0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img {
+    left: 72%;
+    height: 400px;
+}
+
+.recetas-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.container-modal {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #2abfc6;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    overflow:auto;
+}
+
+.title-modal {
+    font-size: 1em;
+}
+
+ul li span {
+    color: #fff;
+    font-weight: 600;
+}
+
+.paragraph-modal {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.close-modal {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0e8f9b;
+    padding: 1em 3em;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 600;
+    transition: background-color .3s;
+}
+
+.close-modal:hover {
+    color: #0e8f9b;
+    background-color: #fff;
+
+}
+
+@media (max-width: 991px) {
+    .card {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .card:hover {
+        height: 600px;
+    }
+    .card .content-recipe {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+    .card .content-recipe1 {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+    .card .content-recipe2 {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+    .card:hover img {
+        top: 60%;
+        left: 50%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    .card .content-recipe, .content-recipe1, .content-recipe2 {
+        padding: 20px;
+    }
+}
