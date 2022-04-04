@@ -45,3 +45,22 @@ closePollo.addEventListener("click", (e) => {
 });
 
 // termina modal pollo
+
+let searchButton = document.querySelector("#button-recipe");
+
+searchButton.addEventListener("click", ()=> {
+    console.log("Boton presionado")
+    sendApiRequest()
+})
+
+
+async function sendApiRequest() {
+    let APP_ID = "cd93eced";
+    let API_KEY = "c3f9bf4235b020458764661a9a26e34e"
+    let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=pizza`)
+    console.log(response)
+    let data = await response.json()
+    console.log(data)
+} 
+
+

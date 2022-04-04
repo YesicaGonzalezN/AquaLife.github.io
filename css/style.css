@@ -98,6 +98,7 @@ header {
     font-size: 70px;
     font-weight: 80px;
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .banner_title .text {
@@ -127,7 +128,7 @@ header {
 
 .banner_img {
     animation: movimiento 2.5s linear infinite;
-    margin-left: 40%;
+    margin-left: 30%;
 }
 
 .banner_img img {  

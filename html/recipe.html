@@ -4,38 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e5e5058fb4.js" crossorigin="anonymous"></script>
     <title>AquaLife - Recetas</title>
     <meta name="author" content="Yesica Gonzalez">
     <meta name="description"
         content="The purpose of this application is to remind people to consume the amount of water necessary to feel hydrated and obtain a healthier life.">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/html" href="style-css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/html" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-
-    <body>
         <header>
             <div class="header-container">
                 <div class="logo">
-                    <a href="index.html">AquaLife</a>
+                    <a href="/html/index.html">AquaLife</a>
                 </div>
 
                 <div class="menu">
                     <nav>
                         <ul>
-                            <li class="menu-selected"><a href="index.html" class="text-menu-selected">Inicio</a></li>
-                            <li class="menu-selected"><a href="recipe.html" class="text-menu-selected">Recetas</a></li>
+                            <li class="menu-selected"><a href="/html/index.html" class="text-menu-selected">Inicio</a>
+                            </li>
+                            <li class="menu-selected"><a href="/html/recipe.html" class="text-menu-selected">Recetas</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -202,7 +202,7 @@
             </div>
         </section>
 
-        
+
         <section class="recetas-modal2">
             <div class="container-modal">
                 <h2 class="title-modal">Ingredientes:</h2>
@@ -239,21 +239,34 @@
                     </li>
                 </ul>
                 <h2 class="title-modal">Preparación de Pollo al Curry</h2>
-                <p class="paragraph-modal">Lo primero es tener preparados todos los ingredientes. Cortar el pollo en piezas de un bocado. Picar la cebolleta y muy fino el diente de ajo, el jengibre y la guindilla sin las semillas, si la usamos. Si usamos cebolla troceada congelada ahorraremos aún más tiempo.<br>
-                Calentar un poco de aceite en una sartén o cazuela y freír la cebolleta 2 minutos. Agregar el ajo, el jengibre y la guindilla, dar unas vueltas e incorporar el tomate. Pasado 1 minuto, agregar todas las especias y remover bien.
-                <br>
-                Incorporar el pollo, salpimentar y mezclar. Cocinar a fuego fuerte unos pocos minutos, hasta que esté dorado por todas partes. Cubrir con la leche de coco o nata y dejar reducir ligeramente. Servir con perejil o cilantro fresco picado.
+                <p class="paragraph-modal">Lo primero es tener preparados todos los ingredientes. Cortar el pollo en
+                    piezas de un bocado. Picar la cebolleta y muy fino el diente de ajo, el jengibre y la guindilla sin
+                    las semillas, si la usamos. Si usamos cebolla troceada congelada ahorraremos aún más tiempo.<br>
+                    Calentar un poco de aceite en una sartén o cazuela y freír la cebolleta 2 minutos. Agregar el ajo,
+                    el jengibre y la guindilla, dar unas vueltas e incorporar el tomate. Pasado 1 minuto, agregar todas
+                    las especias y remover bien.
+                    <br>
+                    Incorporar el pollo, salpimentar y mezclar. Cocinar a fuego fuerte unos pocos minutos, hasta que
+                    esté dorado por todas partes. Cubrir con la leche de coco o nata y dejar reducir ligeramente. Servir
+                    con perejil o cilantro fresco picado.
                 </p>
                 <a href="#" class="close-modal2">Cerrar</a>
             </div>
         </section>
 
-        <div class="footer">
-            <ul>
-                <li>Copyright - Todos los derechos reservados. AquaLife</li>
-            </ul>
-        </div>
-        <script src="recipe.js"></script>
+            <div>
+                <label for="text"></label>
+                <input type="text" id="text" name="text" required>
+            </div>
+            <button id="button-recipe">Buscar Recetas</button>
+            <div id="content"></div>
+
+            <div class="footer">
+                <ul>
+                    <li>Copyright - Todos los derechos reservados. AquaLife</li>
+                </ul>
+            </div>
+            <script src="/js/recipe.js"></script>
 
     </body>
 
