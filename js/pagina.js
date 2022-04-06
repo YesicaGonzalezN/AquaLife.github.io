@@ -1,19 +1,5 @@
-    const openModal = document.querySelector("#btnCalcular");
-    const modal = document.querySelector(".modal__imc");
-    const closeModal = document.querySelector(".imc__close");
 
-    openModal.addEventListener("click", (e) => {
-        e.preventDefault();
-        modal.classList.add("imc--show");
-    });
-
-    closeModal.addEventListener("click", (e) => {
-        e.preventDefault();
-        modal.classList.remove("imc--show");
-    });
-
-
-    function clickBtnCalcular() {
+   function clickBtnCalcular() {
         let txtPeso = document.getElementById("txtPeso");
         let peso = txtPeso.value;
 
@@ -21,6 +7,23 @@
         let altura = txtAltura.value;
 
         let imc = peso / (altura * altura)
-        document.querySelector(".imc__paragraph").innerHTML =
-            Math.round(imc);
+
+        swal({
+            title: "Tu Indice de Masa Corporal es: ",
+            text: `${Math.round(imc)}`,
+            button: "Ok",
+            timer: 5000
+          });
     }
+
+    const btnCalcular = document.querySelector("#btnCalcular");
+
+    btnCalcular.addEventListener("click", (e) => {
+        e.preventDefault();
+    })
+
+ 
+
+   
+   
+
