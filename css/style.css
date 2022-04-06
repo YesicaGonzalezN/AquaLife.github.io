@@ -486,8 +486,9 @@ header {
         flex-direction: column;
     }
 }
+/* --------------------------termina estilo de index.html------------------------ */
 
-/*--------------------------- estilo de recipe.html------------------------------ */
+/*---------------------------empieza estilo de recipe.html----------------------- */
 
 .titulo-recipe h1 {
     font-family: 'Montserrat', sans-serif;
@@ -889,7 +890,7 @@ ul li span {
 
 /* ------------------------- fin de estilo de recipe.html -------------------------- */
 
-
+/* -------------------------empieza estilo de imc.html------------------------------ */
 .container-body {
     padding: 100px;
     width: 90%;
@@ -1040,4 +1041,6 @@ ul li span {
         width: 100%;
     }
 }
+
+/* -----------------------------termina estilo de imc.html------------------------------- */
 

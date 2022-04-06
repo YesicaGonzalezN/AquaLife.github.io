@@ -12,7 +12,7 @@ closeHummus.addEventListener("click", (e) => {
     modalHummus.classList.remove("modalhummus--show")
 });
 
-// termina modal hummus
+// -------------------------termina modal hummus--------------------------------------
 
 const openRisotto = document.querySelector(".open-modal1");
 const modalRisotto = document.querySelector(".recetas-modal1");
@@ -28,7 +28,7 @@ closeRisotto.addEventListener("click", (e) => {
     modalRisotto.classList.remove("modalrisotto--show")
 });
 
-// termina modal risotto
+//----------------------------- termina modal risotto-----------------------------------
 
 const openPollo = document.querySelector(".open-modal2");
 const modalPollo = document.querySelector(".recetas-modal2");
@@ -44,11 +44,13 @@ closePollo.addEventListener("click", (e) => {
     modalPollo.classList.remove("modalpollo--show")
 });
 
-// termina modal pollo
+// --------------------------------------termina modal pollo----------------------------------
+
+// ---------------------------empieza agregado de API-----------------------------------
 
 let searchButton = document.querySelector("#button-recipe");
 
-searchButton.addEventListener("click", ()=> {
+searchButton.addEventListener("click", () => {
     console.log("Boton presionado")
     sendApiRequest()
 })
@@ -62,7 +64,7 @@ async function sendApiRequest() {
     let data = await response.json()
     console.log(data)
     useApiData(data)
-} 
+}
 
 function useApiData(data) {
     document.querySelector("#content").innerHTML = `
@@ -79,7 +81,7 @@ function useApiData(data) {
 
 let searchButtonC = document.querySelector("#button-recipe1");
 
-searchButtonC.addEventListener("click", ()=> {
+searchButtonC.addEventListener("click", () => {
     console.log("Boton presionado")
     sendApiRequestC()
 })
@@ -92,7 +94,7 @@ async function sendApiRequestC() {
     let data = await response.json()
     console.log(data)
     useApiDataC(data)
-} 
+}
 
 function useApiDataC(data) {
     document.querySelector("#content1").innerHTML = `
@@ -107,4 +109,4 @@ function useApiDataC(data) {
     `
 }
 
-
+// ----------------------------termina agregado de API----------------------------------------

@@ -1,15 +1,15 @@
 document.querySelector("#show-calcula").addEventListener("click", function () {
     document.querySelector(".popup").classList.add("active");
 });
-// abrir popup
+// --------------------------abrir popup----------------------------------
 document
     .querySelector(".popup .close-btn")
     .addEventListener("click", function () {
         document.querySelector(".popup").classList.remove("active");
     });
-// cerrar popup
+//------------------------- cerrar popup---------------------------------
 
-// capturar datos de popup
+//------------------------------ capturar datos de popup------------------------------
 let send = document.getElementById("send");
 let form = document.getElementById("formpopup");
 
@@ -39,18 +39,18 @@ send.addEventListener("click", (event) => {
     altura = altura.value;
     localStorage.setItem("altura", altura);
 });
-// termina capturar datos de popup
+// -----------------------termina capturar datos de popup---------------------------------
 
-// peso -65 y -175 altura
+//-------------------------- peso -65 y -175 altura--------------------------------------
 function info() {
     let altura = parseInt(document.getElementById("altura").value);
     let peso = parseInt(document.getElementById("peso").value);
 
-    if (peso <= 65 && altura <= 175) {//Agregue un condicional
+    if (peso <= 65 && altura <= 175) { 
         console.log(peso);
         console.log(altura);
 
-        // apertura y cierre de modales
+        //---------------------------- apertura y cierre de modal-------------------------
         const openModal = document.querySelector(".send");
         const modal = document.querySelector(".modal__calcula");
         const closeModal = document.querySelector(".modal__close");
@@ -65,8 +65,8 @@ function info() {
             modal.classList.remove("modal--show");
         });
 
-        // peso +65 y +160 altura
-    } else if(peso >= 65 && altura >= 160) {
+        // ----------------------peso +65 y +160 altura-------------------------------
+    } else if (peso >= 65 && altura >= 160) {
         console.log(peso);
         console.log(altura);
 

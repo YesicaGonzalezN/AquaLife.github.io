@@ -13,14 +13,14 @@
     });
 
 
-function clickBtnCalcular() {
-    let txtPeso = document.getElementById("txtPeso");
-    let peso = txtPeso.value;
+    function clickBtnCalcular() {
+        let txtPeso = document.getElementById("txtPeso");
+        let peso = txtPeso.value;
 
-    let txtAltura = document.getElementById("txtAltura");
-    let altura = txtAltura.value;
+        let txtAltura = document.getElementById("txtAltura");
+        let altura = txtAltura.value;
 
-    let imc = peso / (altura * altura)
-    document.querySelector(".imc__paragraph").innerHTML =
-    Math.round(imc);
-}
+        let imc = peso / (altura * altura)
+        document.querySelector(".imc__paragraph").innerHTML =
+            Math.round(imc);
+    }
