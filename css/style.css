@@ -74,7 +74,7 @@ header {
 }
 
 .menu .text-menu-selected {
-    color:hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
 }
 
 .container-all {
@@ -93,7 +93,8 @@ header {
 }
 
 .banner_title h1 {
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    ;
     color: #fff;
     font-size: 70px;
     font-weight: 80px;
@@ -131,7 +132,7 @@ header {
     margin-left: 30%;
 }
 
-.banner_img img {  
+.banner_img img {
     display: block;
 }
 
@@ -144,12 +145,12 @@ header {
     width: 400px;
     padding: 20px 30px;
     background: rgb(102, 211, 245);
-    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     z-index: 1;
     transition: top 0ms ease-in-out 200ms,
-                opacity 200ms ease-in-out 0ms,
-                transform 20ms ease-in-out 0ms;
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
 }
 
 .popup.active {
@@ -157,8 +158,8 @@ header {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: top 0ms ease-in-out 0ms,
-                opacity 200ms ease-in-out 0ms,
-                transform 200ms ease-in-out 0ms;
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
 }
 
 .popup .close-btn {
@@ -271,7 +272,7 @@ header {
     width: 90%;
     max-width: 700px;
     max-height: 100%;
-    background-color:#6cd8d8;
+    background-color: #6cd8d8;
     border-radius: 6px;
     padding: 3em 2.5em;
     display: grid;
@@ -287,21 +288,26 @@ header {
     font-size: 2.5rem;
 }
 
+.modal__paragraph1 {
+    font-size: 1.5em;
+}
+
 .modal__paragraph {
     margin-bottom: 10px;
 }
 
 .modal__vinculo {
-    color:#fff;
+    color: #fff;
     font-weight: 600;
 }
 
 .modal__container img {
-    width: 20%;
+    width: 15%;
     max-width: 300px;
 }
 
-.modal__close, .modal__close1{
+.modal__close,
+.modal__close1 {
     text-decoration: none;
     color: #fff;
     background-color: #08beb2;
@@ -347,7 +353,7 @@ header {
     left: 5%;
     animation-duration: 3s;
     animation-delay: 3s;
-    z-index:0;
+    z-index: 0;
 }
 
 .burbuja:nth-child(2) {
@@ -459,16 +465,16 @@ header {
 }
 
 @media screen and (max-width: 1200px) {
-   .banner,
-   .banner_img {
+
+    .banner,
+    .banner_img {
         max-width: 1000px;
         padding: 0 20px;
     }
 }
 
 @media screen and (max-width: 1020px) {
-    .banner
-     {
+    .banner {
         width: 100%;
         flex-direction: column;
     }
@@ -481,9 +487,9 @@ header {
     }
 }
 
-/* estilo de recipe.html */
+/*--------------------------- estilo de recipe.html------------------------------ */
 
-.titulo-recipe h1{
+.titulo-recipe h1 {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 3em;
@@ -527,7 +533,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background:#0dd1d8;
+    background: #0dd1d8;
     clip-path: circle(120px at center);
     transition: 0.5s;
 }
@@ -541,7 +547,7 @@ header {
     position: absolute;
     top: 50%;
     left: 52%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     height: 300px;
     pointer-events: none;
     transition: 0.5s;
@@ -560,7 +566,7 @@ header {
 }
 
 .card:hover .content-recipe {
-    left:0;
+    left: 0;
     opacity: 1;
     visibility: visible;
 }
@@ -593,7 +599,7 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     height: 250px;
     pointer-events: none;
     transition: 0.5s;
@@ -624,7 +630,7 @@ header {
 }
 
 .card:hover .content-recipe1 {
-    left:0;
+    left: 0;
     opacity: 1;
     visibility: visible;
 }
@@ -633,7 +639,7 @@ header {
     position: absolute;
     top: 48%;
     left: 49%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     height: 270px;
     pointer-events: none;
     transition: 0.5s;
@@ -664,7 +670,7 @@ header {
 }
 
 .card:hover .content-recipe2 {
-    left:0;
+    left: 0;
     opacity: 1;
     visibility: visible;
 }
@@ -674,7 +680,9 @@ header {
     height: 400px;
 }
 
-.recetas-modal, .recetas-modal1, .recetas-modal2 {
+.recetas-modal,
+.recetas-modal1,
+.recetas-modal2 {
     position: fixed;
     top: 0;
     left: 0;
@@ -684,7 +692,7 @@ header {
     display: flex;
     opacity: 0;
     pointer-events: none;
-    z-index:2;
+    z-index: 2;
     transition: opacity .6s;
     --transform: translateY(-100vw);
     --transition: transform .8s;
@@ -723,7 +731,7 @@ header {
     gap: 1em;
     place-items: center;
     grid-auto-columns: 100%;
-    overflow:auto;
+    overflow: auto;
     transform: var(--transform);
     transition: var(--transition);
 }
@@ -742,7 +750,9 @@ ul li span {
     text-align: center;
 }
 
-.close-modal, .close-modal1, .close-modal2 {
+.close-modal,
+.close-modal1,
+.close-modal2 {
     text-decoration: none;
     color: #fff;
     background-color: #0e8f9b;
@@ -766,7 +776,7 @@ ul li span {
     margin-bottom: 50px;
 }
 
-.text-search h3{
+.text-search h3 {
     font-family: 'Montserrat', sans-serif;
     color: rgb(0, 204, 255);
     font-size: 3em;
@@ -785,7 +795,7 @@ ul li span {
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
-    margin:auto;
+    margin: auto;
 }
 
 .button-recipe1 {
@@ -838,24 +848,29 @@ ul li span {
         align-items: flex-start;
         margin: 10px;
     }
+
     .card:hover {
         height: 600px;
     }
+
     .card .content-recipe {
         width: 100%;
         left: 0;
         padding: 40px;
     }
+
     .card .content-recipe1 {
         width: 100%;
         left: 0;
         padding: 40px;
     }
+
     .card .content-recipe2 {
         width: 100%;
         left: 0;
         padding: 40px;
     }
+
     .card:hover img {
         top: 60%;
         left: 50%;
@@ -864,8 +879,165 @@ ul li span {
 }
 
 @media (max-width: 420px) {
-    .card .content-recipe, .content-recipe1, .content-recipe2 {
+
+    .card .content-recipe,
+    .content-recipe1,
+    .content-recipe2 {
         padding: 20px;
+    }
+}
+
+/* ------------------------- fin de estilo de recipe.html -------------------------- */
+
+
+.container-body {
+    padding: 100px;
+    width: 90%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.container-body h1 {
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+
+.form-imc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-imc input {
+    width: 350px;
+    height: 30px;
+    margin: 0.5rem;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.form-imc label {
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.btn-imc {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    background-color: rgb(13, 168, 168);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.imc-img {
+    margin-left: 30%;
+}
+
+.imc-img img {
+    width: 500px;
+    display: inline-block;
+}
+
+.modal__imc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: #111111bd;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s;
+    --transform: translateY(-100vw);
+    --transition: transform .8s;
+}
+
+.imc--show {
+    opacity: 1;
+    pointer-events: unset;
+    z-index: 3;
+    --transform: translateY(0);
+    --transition: transform .8s .2s;
+}
+
+.imc__container {
+    margin: auto;
+    width: 90%;
+    max-width: 700px;
+    max-height: 100%;
+    background-color: #6cd8d8;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    text-align: center;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.imc__title {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.imc__paragraph {
+    font-size: 3em;
+    color: #08beb2;
+    font-weight: 900;
+}
+
+.imc__close {
+    text-decoration: none;
+    color: #fff;
+    background-color: #08beb2;
+    padding: 1em 3em;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 600;
+    transition: background-color .3s;
+}
+
+.imc__close:hover {
+    color: #08beb2;
+    background-color: #fff;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .form-imc,
+    .imc-img img {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .form-imc {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .form-imc {
+        width: 100%;
     }
 }
 

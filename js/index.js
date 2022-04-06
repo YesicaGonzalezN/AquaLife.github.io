@@ -66,7 +66,7 @@ function info() {
         });
 
         // peso +65 y +160 altura
-    } else if(peso >= 65 && altura >= 1.60) {
+    } else if(peso >= 65 && altura >= 160) {
         console.log(peso);
         console.log(altura);
 
