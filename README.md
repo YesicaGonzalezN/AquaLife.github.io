@@ -6,5 +6,6 @@ cada persona.
 Cuenta con una sección para calcular el Indice de Masa Corporal. 
 En este proyecto hice uso de la API de recetas Edemam, al igual que una pestaña con recetas propias.
 
+https://aqualife.vercel.app/
 
 ![aqualife](https://user-images.githubusercontent.com/99261724/167211416-9a4bc5d5-0899-484b-8dfd-be6ca29c1905.png)
