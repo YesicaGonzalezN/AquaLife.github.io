@@ -3,7 +3,7 @@
 Aplicación Web AquaLife.
 AquaLife esta diseñada para calcular la cantidad de agua que se debe consumir por día, en función al peso y altura de 
 cada persona.
-Cuenta con una sección para calcular el Indice de Masa Corporal. 
+Cuenta con una sección para calcular el Indice de Masa Corporal. (IMC) 
 En este proyecto hice uso de la API de recetas Edemam, al igual que una pestaña con recetas propias.
 
 https://aqualife.vercel.app/
